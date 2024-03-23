@@ -1,0 +1,14 @@
+$primary: #ffd300;
+
+// first import function and then import variable file
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-thheme-colors: (
+  "altligt": #002366,
+  "altdark": #061f09,
+);
+
+$theme-colors: map-merge($custom-thheme-colors, $theme-colors);
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
